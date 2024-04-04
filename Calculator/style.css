@@ -1,0 +1,70 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("./red-and-blue-calculators-yxm0myfzuym67431.jpg");
+}
+
+/* Style for the calculator container */
+.outer-div {
+    width: 330px;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border with transparency */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow */
+    backdrop-filter: blur(4px);
+    border: 2px solid lavender;
+}
+
+/* Style for the input box */
+.input-box {
+    width: calc(100% - 30px); /* Adjusted width to accommodate padding */
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: right;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    width: 100% !important;
+    border: 2px solid lavender;
+}
+
+/* Style for the button rows */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 5px;
+}
+
+/* Style for the calculator buttons */
+.buttons button {
+    padding: 20px;
+    font-size: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border with transparency */
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(229, 229, 234, 0.3); /* Semi-transparent background */
+    color: #333;
+    outline: none;
+    backdrop-filter: blur(4px);
+}
+
+.buttons button:hover {
+    background-color: rgba(209, 209, 214, 0.3); /* Semi-transparent background */
+}
+
+/* Style for the operator buttons */
+.btn-plus, .btn-minus, .btn-multiply, .btn-divide, .btn-equal {
+    background-color: #ff9500;
+    color: white;
+}
+
+.btn-plus:hover, .btn-minus:hover, .btn-multiply:hover, .btn-divide:hover, .btn-equal:hover {
+    background-color: #ff8000;
+}
